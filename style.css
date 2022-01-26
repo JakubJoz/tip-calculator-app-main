@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 body{
     margin: 0;
     padding: 0;
     background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
 }
 
 .container{
@@ -23,20 +25,74 @@ img{
     height: 450px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
-    justify-content: right;
+    justify-content: space-around;
     align-items: center;
 }
 
-/*.calculate{
+.calculate{
     width: 50%;
-    border: 1px solid black;
-}*/
+    height: 100%;
+}
 
 .summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 45%;
     margin: 40px;
     margin-left: 0;
     height: 82%;
     background-color: hsl(183, 100%, 15%);
     border-radius: 20px;
+}
+
+.container_summary{
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    grid-gap: 1em;
+    margin-top: 50px;
+}
+
+.sum{
+    color: hsl(172, 67%, 45%);
+    font-weight: 700;
+    font-size: 42px;
+}
+
+.heading{
+    color: hsl(189, 41%, 97%);
+}
+
+.text{
+    color: hsl(185, 41%, 84%);
+}
+
+button{
+    width: 80%;
+    height: 40px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    background-color: ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bill{
+    margin: 30px;
+    color: hsl(184, 14%, 56%);
+    font-weight: 700;
+}
+
+#bill{
+    width: 90%;
+    height: 40px;
+    border: none;
+    text-align: end;
 }

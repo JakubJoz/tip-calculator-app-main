@@ -12,8 +12,48 @@
     <div class="container">
         <img src="images/logo.svg" alt="logo">
         <div class="box">
-            <div class="calculate"></div>
-            <div class="summary"></div>
+            <div class="calculate">
+                <div class="bill">
+                    <label for="bill">Bill</label><br>
+                    <input type="text" id="bill" name="bill" value="0">
+                </div>
+                <div class="select_tip">
+                    <span>Select Tip %</span>
+                    <div class="buttons-container">
+                        <button>5%</button>
+                        <button>10%</button>
+                        <button>15%</button>
+                        <button>25%</button>
+                        <button>50%</button>
+                        <input type="text" id="custom" name="custom" value="Custom">    
+                    </div>
+                </div>
+                <div class="number_of_people">
+                    <label for="people">Number of People</label>
+                    <input type="text" id="people" name="people" value="0">
+                </div>
+            </div>
+            <div class="summary">
+                <div class="container_summary">
+                    <div class="tip-amount">
+                        <span class="heading">Tip Amount</span>
+                        <br>
+                        <span class="text">/ person</span>
+                    </div>
+                    <div class="tip-sum">
+                        <span class="sum">$0.00</span>
+                    </div>
+                    <div class="total">
+                        <span class="heading">Total</span>
+                        <br>
+                        <span class="text">/ person</span>
+                    </div>
+                    <div class="total-sum">
+                        <span class="sum">$0.00</span>
+                    </div>
+                </div>
+                <button type="reset">RESET</button>
+            </div>
         </div>
     </div>
 </body>
